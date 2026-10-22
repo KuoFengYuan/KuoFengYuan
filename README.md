@@ -29,7 +29,7 @@ Capture scenes with ARKit, review and refine the data, then train a 3D Gaussian 
 
 <p align="center">
   <a href="https://testflight.apple.com/join/hKhVdTUR">
-    <img src="https://raw.githubusercontent.com/KuoFengYuan/arkit-3dgs-scanner/main/docs/media/demo.gif" width="360" alt="SplatCapture Studio demo: capture a scene, refine the scan, and train a 3D Gaussian Splatting model on iPhone" />
+    <img src="https://raw.githubusercontent.com/KuoFengYuan/arkit-3dgs-scanner/main/docs/media/demo.gif" width="320" height="696" alt="SplatCapture Studio demo: capture a scene, refine the scan, and train a 3D Gaussian Splatting model on iPhone" />
   </a>
 </p>
 
