@@ -1,65 +1,73 @@
-<p align="center">
-  <img src="./assets/banner.svg" alt="Feng-Yuan Kuo — Bringing real-world scenes into 3D" width="100%" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg" />
+  <img src="./assets/banner-light.svg" width="100%" alt="Feng-Yuan Kuo. Bringing real-world scenes into 3D: capture, reconstruct, train, explore. A coloured point cloud of a small house and tree turns slowly, with red camera frustums on the capture orbit." />
+</picture>
+
+I work on 3D reconstruction: capturing real places with phones and drones, turning them into point clouds and Gaussian Splatting models, and building the tools to look at the result. Most of what's here is that pipeline, one piece per repo.
+
+## SplatCapture Studio
+
+An iPhone app that scans a space and trains a 3D Gaussian Splatting model on the phone itself, no desktop GPU involved. It records ARKit camera poses (plus LiDAR depth on phones that have it), lets you clean up the frames before training, and runs the training in Swift and Metal with a live preview you can orbit. If you'd rather train on a desktop, it exports a COLMAP dataset instead.
+
+**[Join the TestFlight beta](https://testflight.apple.com/join/hKhVdTUR)** · [Source](https://github.com/KuoFengYuan/arkit-3dgs-scanner)
 
 <p align="center">
-  <strong>3D Reconstruction · Gaussian Splatting · On-device AI</strong>
-</p>
-
-I build tools for capturing, reconstructing, and exploring real-world scenes—from iPhone scanning and on-device Gaussian Splatting training to desktop reconstruction workflows and geospatial visualization.
-
-My projects connect algorithms, data pipelines, and interactive interfaces to make 3D workflows easier to use and inspect.
-
-## What I build
-
-| Area | Practical work |
-| :--- | :--- |
-| **3D Capture & Reconstruction** | Image and video processing, camera pose refinement, point-cloud workflows, and COLMAP reconstruction. |
-| **On-device Gaussian Splatting** | ARKit capture, optional LiDAR fusion, and Swift/Metal training with live previews on iPhone. |
-| **Spatial Data & Visualization** | GPS-tagged drone imagery, 3D Tiles conversion, and geographic alignment of Gaussian Splatting scenes. |
-| **Local AI Tools** | Document RAG workflows with inspectable retrieval, traceable citations, and reproducible runs. |
-
-## Featured project
-
-### SplatCapture Studio
-
-**Scan, refine, train, and view—all on iPhone.**
-
-Capture scenes with ARKit, review and refine the data, then train a 3D Gaussian Splatting model directly on the device. Export a COLMAP dataset for desktop workflows when needed.
-
-<p align="center">
-  <a href="https://testflight.apple.com/join/hKhVdTUR"><strong>Try on TestFlight ↗</strong></a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner">View Source ↗</a>
+  <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4"><img width="240" src="./assets/splatcapture-demo.webp" alt="Screen recording of SplatCapture Studio: scanning a desk, fusing the point cloud, then training and orbiting a 3D Gaussian Splatting model on the iPhone" /></a>
   <br />
-  <sub>Free beta · Requires the TestFlight app</sub>
-</p>
-
-<p align="center">
-  <code>Swift</code> · <code>Metal</code> · <code>ARKit</code> · <code>LiDAR</code> · <code>3DGS</code>
-</p>
-
-<p align="center">
-  <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4">
-    <img src="./assets/splatcapture-preview.jpg" width="300" alt="Actual SplatCapture Studio capture screen, taken from the project's demo recording" />
-  </a>
+  <sub>fig. 2&nbsp;&nbsp; a real run on the phone: desk scan, point-cloud fusion, training (<a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4">full 60 s video</a>)</sub>
   <br />
-  <sub>Actual in-app capture screen · <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4">Watch the full demo ↗</a></sub>
+  <sub>241,171 Gaussians · PSNR 26.1 dB · 1 min 38 s of training, stopped early at 1,586 of 4,000 iterations</sub>
 </p>
 
-## More projects
+## The rest of the pipeline
 
-| Project | What it does |
-| :--- | :--- |
-| [Recon Studio](https://github.com/KuoFengYuan/reconstudio) | A local workspace connecting video and photos to COLMAP, 3DGS training, and mesh generation. |
-| [3D Tiles Gaussian Splatting Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer) | Convert, position, and explore Gaussian Splatting scenes in CesiumJS. |
-| [align-capture](https://github.com/KuoFengYuan/align-capture) | Pair drone video frames with MAVLink telemetry and export GPS-tagged imagery for reconstruction. |
-| [RAGGlass](https://github.com/KuoFengYuan/RAGGlass) | Inspect PDFs, retrieved evidence, citations, and model answers in a local RAG workbench. |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## Technologies
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-align-capture-dark.svg" />
+  <img src="./assets/sketch-align-capture-light.svg" width="100%" alt="Sketch: a drone's survey path with capture points, one frame tagged with GPS EXIF fields" />
+</picture>
 
-**3D & Spatial** — Gaussian Splatting, COLMAP, ARKit, Metal, CesiumJS, 3D Tiles
+**[align-capture](https://github.com/KuoFengYuan/align-capture)**<br />
+Grabs frames from a drone's RTSP stream and writes the matching MAVLink GPS fix into each image's EXIF, so they go straight into COLMAP. Read-only: it never sends commands to the aircraft.
 
-**Development** — Python, Swift, JavaScript, TypeScript, FastAPI, Vue
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-cesium-viewer-dark.svg" />
+  <img src="./assets/sketch-cesium-viewer-light.svg" width="100%" alt="Sketch: a globe with a pin and an inset of Gaussian splats" />
+</picture>
 
-**Document AI** — Docling, Qdrant, Ollama
+**[3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer)**<br />
+A CesiumJS viewer for Gaussian Splatting as 3D Tiles. Converts your trained PLY in the app and lets you place it on the globe.
+
+</td>
+<td width="50%" valign="top">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-reconstudio-dark.svg" />
+  <img src="./assets/sketch-reconstudio-light.svg" width="100%" alt="Sketch: video frames, a sparse COLMAP point cloud with cameras, and a triangle mesh" />
+</picture>
+
+**[Recon Studio](https://github.com/KuoFengYuan/reconstudio)**<br />
+A local web panel for the desktop side: video to sharp frames, COLMAP, 3DGS training with GS-2M, then a mesh. One place to run and check each step.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-ragglass-dark.svg" />
+  <img src="./assets/sketch-ragglass-light.svg" width="100%" alt="Sketch: a PDF page with highlighted lines linked to a citation in an answer" />
+</picture>
+
+**[RAGGlass](https://github.com/KuoFengYuan/RAGGlass)**<br />
+Not 3D. A local workbench for debugging document RAG: the PDF, the retrieved evidence and the model's answer side by side, with every run kept.
+
+</td>
+</tr>
+</table>
+
+## Tools
+
+**3D & spatial:** Gaussian Splatting, COLMAP, ARKit, LiDAR, Metal, CesiumJS, 3D Tiles<br />
+**Languages & web:** Swift, Python, TypeScript, JavaScript, FastAPI, Vue<br />
+**Local AI:** Docling, Qdrant, Ollama
+
+<!-- Figures are generated by tools/build_assets.py -->
