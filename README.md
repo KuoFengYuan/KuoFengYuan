@@ -28,12 +28,6 @@ My projects connect algorithms, data pipelines, and interactive interfaces to ma
 Capture scenes with ARKit, review and refine the data, then train a 3D Gaussian Splatting model directly on the device. Export a COLMAP dataset for desktop workflows when needed.
 
 <p align="center">
-  <a href="https://testflight.apple.com/join/hKhVdTUR">
-    <img src="https://raw.githubusercontent.com/KuoFengYuan/arkit-3dgs-scanner/main/docs/media/demo.gif" width="320" height="696" alt="SplatCapture Studio demo: capture a scene, refine the scan, and train a 3D Gaussian Splatting model on iPhone" />
-  </a>
-</p>
-
-<p align="center">
   <a href="https://testflight.apple.com/join/hKhVdTUR"><strong>Try on TestFlight ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner">View Source ↗</a>
@@ -44,6 +38,10 @@ Capture scenes with ARKit, review and refine the data, then train a 3D Gaussian 
 <p align="center">
   <code>Swift</code> · <code>Metal</code> · <code>ARKit</code> · <code>LiDAR</code> · <code>3DGS</code>
 </p>
+
+![SplatCapture Studio demo: capture, refine, and train a 3D model on iPhone](https://raw.githubusercontent.com/KuoFengYuan/arkit-3dgs-scanner/main/docs/media/demo.gif)
+
+[Watch the full demo ↗](https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4)
 
 ## More projects
 
