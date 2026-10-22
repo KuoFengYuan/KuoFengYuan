@@ -39,9 +39,13 @@ Capture scenes with ARKit, review and refine the data, then train a 3D Gaussian 
   <code>Swift</code> · <code>Metal</code> · <code>ARKit</code> · <code>LiDAR</code> · <code>3DGS</code>
 </p>
 
-![SplatCapture Studio demo: capture, refine, and train a 3D model on iPhone](https://raw.githubusercontent.com/KuoFengYuan/arkit-3dgs-scanner/main/docs/media/demo.gif)
-
-[Watch the full demo ↗](https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4)
+<p align="center">
+  <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4">
+    <img src="./assets/splatcapture-preview.jpg" width="300" alt="Actual SplatCapture Studio capture screen, taken from the project's demo recording" />
+  </a>
+  <br />
+  <sub>Actual in-app capture screen · <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4">Watch the full demo ↗</a></sub>
+</p>
 
 ## More projects
 
