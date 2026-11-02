@@ -2,7 +2,11 @@
 
 [English](README.md) | **繁體中文**
 
-我做 3D 掃描與重建工具，從 iPhone 拍攝、Gaussian Splatting 訓練，到網頁上的模型檢視。
+我是 Feng-Yuan Kuo，在台灣做 3D 視覺與重建開發，主要方向是 Gaussian Splatting 和行動裝置上的模型訓練。
+
+- **手機端 3DGS**：用 Swift 和 Metal 在 iPhone 上訓練，提供即時預覽與模型編輯。
+- **拍攝與重建**：ARKit／LiDAR 拍攝、相機姿態、深度融合與 COLMAP 資料集整理。
+- **3D 檢視工具**：網頁上的 Splat 模型檢視，以及 CesiumJS、3D Tiles 地理空間資料展示。
 
 **[試用 iPhone App](https://testflight.apple.com/join/hKhVdTUR)** · [看實錄](#iphone-實錄) · [找專案](#專案)
 
