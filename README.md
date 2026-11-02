@@ -6,20 +6,6 @@ I build tools for 3D scanning and reconstruction, from iPhone capture to Gaussia
 
 **[Try the iPhone app](https://testflight.apple.com/join/hKhVdTUR)** · [Watch the demo](#iphone-demo) · [Browse projects](#projects)
 
-## SplatCapture Studio
-
-Scan a space with an iPhone and train a 3D Gaussian Splatting model on the phone. Walk through the result, edit it, or export a model or COLMAP dataset.
-
-The app is on [TestFlight](https://testflight.apple.com/join/hKhVdTUR). The first-generation source is available as [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything).
-
-### iPhone demo
-
-Scanning, training, walking through the model and editing. Recorded on iPhone, sped up to 30 seconds.
-
-https://github.com/user-attachments/assets/3f8944d1-145c-4fc3-96c1-3cb5fdb734bf
-
-<sub>Demo footage: [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).</sub>
-
 ## Projects
 
 | Project | What it does |
@@ -29,6 +15,20 @@ https://github.com/user-attachments/assets/3f8944d1-145c-4fc3-96c1-3cb5fdb734bf
 | [Recon Studio](https://github.com/KuoFengYuan/reconstudio) | Process video frames, run COLMAP and train 3DGS from a local web interface. |
 | [3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer) | Convert PLY models to 3D Tiles and view them on a CesiumJS globe. |
 | [RAGGlass](https://github.com/KuoFengYuan/RAGGlass) | Inspect document retrieval, source passages and answers side by side. |
+
+## SplatCapture Studio
+
+Scan a space with an iPhone and train a 3D Gaussian Splatting model on the phone. Walk through the result, edit it, or export a model or COLMAP dataset.
+
+The first-generation source is available as [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything).
+
+### iPhone demo
+
+Scanning, training, walking through the model and editing. Recorded on iPhone, sped up to 30 seconds.
+
+https://github.com/user-attachments/assets/3f8944d1-145c-4fc3-96c1-3cb5fdb734bf
+
+<sub>Demo footage: [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).</sub>
 
 ## Tools I use
 
