@@ -10,7 +10,7 @@ I build tools for 3D scanning and reconstruction, from iPhone capture to Gaussia
 
 | Project | What it does |
 | --- | --- |
-| [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything) | First-generation iPhone app: scan, train 3DGS on the phone, or export a COLMAP dataset. |
+| [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything) | iPhone scanning, on-device 3DGS training and COLMAP dataset export. |
 | [align-capture](https://github.com/KuoFengYuan/align-capture) | Extract frames from a drone's RTSP stream with matching MAVLink GPS data for COLMAP. |
 | [Recon Studio](https://github.com/KuoFengYuan/reconstudio) | Process video frames, run COLMAP and train 3DGS from a local web interface. |
 | [3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer) | Convert PLY models to 3D Tiles and view them on a CesiumJS globe. |
@@ -20,7 +20,7 @@ I build tools for 3D scanning and reconstruction, from iPhone capture to Gaussia
 
 Scan a space with an iPhone and train a 3D Gaussian Splatting model on the phone. Walk through the result, edit it, or export a model or COLMAP dataset.
 
-The first-generation source is available as [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything).
+[Splatify-Anything on GitHub](https://github.com/KuoFengYuan/splatify-anything).
 
 ### iPhone demo
 
