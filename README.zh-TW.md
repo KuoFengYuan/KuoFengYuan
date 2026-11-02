@@ -20,7 +20,7 @@
 | [3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer) | 將 PLY 模型轉為 3D Tiles，放到 CesiumJS 地球上檢視。 |
 | [RAGGlass](https://github.com/KuoFengYuan/RAGGlass) | 對照文件檢索結果、來源段落與回答。 |
 
-## SplatCapture Studio
+## AnyReplica
 
 用 iPhone 掃描空間，直接在手機上訓練 3D Gaussian Splatting 模型。完成後可以走進模型、編輯，或匯出模型與 COLMAP 資料集。
 
