@@ -2,7 +2,11 @@
 
 **English** | [繁體中文](README.zh-TW.md)
 
-I build tools for 3D scanning and reconstruction, from iPhone capture to Gaussian Splatting and web viewers.
+I'm Feng-Yuan Kuo, a developer based in Taiwan. I work on 3D vision and reconstruction, with a focus on Gaussian Splatting and training models directly on mobile devices.
+
+- **On-device 3DGS:** Swift and Metal training on iPhone, with live previews and model editing.
+- **Capture and reconstruction:** ARKit/LiDAR capture, camera poses, depth fusion and COLMAP dataset preparation.
+- **3D viewers:** Web-based splat viewers and geospatial 3D data with CesiumJS and 3D Tiles.
 
 **[Try the iPhone app](https://testflight.apple.com/join/hKhVdTUR)** · [Watch the demo](#iphone-demo) · [Browse projects](#projects)
 
