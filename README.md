@@ -1,71 +1,35 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg" />
-  <img src="./assets/banner-light.svg" width="100%" alt="Feng-Yuan Kuo. Bringing real-world scenes into 3D: capture, reconstruct, train, explore. A coloured point cloud of a small house and tree turns slowly, with red camera frustums on the capture orbit." />
-</picture>
+# Feng-Yuan Kuo
 
-I work on 3D reconstruction: capturing real places with phones and drones, turning them into point clouds and Gaussian Splatting models, and building the tools to look at the result. Most of what's here is that pipeline, one piece per repo.
+**English** | [繁體中文](README.zh-TW.md)
+
+I build tools for 3D scanning and reconstruction, from iPhone capture to Gaussian Splatting and web viewers.
+
+**[Try the iPhone app](https://testflight.apple.com/join/hKhVdTUR)** · [Watch the demo](#iphone-demo) · [Browse projects](#projects)
 
 ## SplatCapture Studio
 
 Scan a space with an iPhone and train a 3D Gaussian Splatting model on the phone. Walk through the result, edit it, or export a model or COLMAP dataset.
 
-**[Join the TestFlight beta](https://testflight.apple.com/join/hKhVdTUR)** · [First-generation source](https://github.com/KuoFengYuan/splatify-anything)
+The app is on [TestFlight](https://testflight.apple.com/join/hKhVdTUR). The first-generation source is available as [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything).
 
-Scanning, on-device training, walking through the model and editing. An iPhone screen recording, sped up to 30 seconds.
+### iPhone demo
+
+Scanning, training, walking through the model and editing. Recorded on iPhone, sped up to 30 seconds.
 
 https://github.com/user-attachments/assets/3f8944d1-145c-4fc3-96c1-3cb5fdb734bf
 
 <sub>Demo footage: [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).</sub>
 
-## The rest of the pipeline
+## Projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
+| Project | What it does |
+| --- | --- |
+| [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything) | First-generation iPhone app: scan, train 3DGS on the phone, or export a COLMAP dataset. |
+| [align-capture](https://github.com/KuoFengYuan/align-capture) | Extract frames from a drone's RTSP stream with matching MAVLink GPS data for COLMAP. |
+| [Recon Studio](https://github.com/KuoFengYuan/reconstudio) | Process video frames, run COLMAP and train 3DGS from a local web interface. |
+| [3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer) | Convert PLY models to 3D Tiles and view them on a CesiumJS globe. |
+| [RAGGlass](https://github.com/KuoFengYuan/RAGGlass) | Inspect document retrieval, source passages and answers side by side. |
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-align-capture-dark.svg" />
-  <img src="./assets/sketch-align-capture-light.svg" width="100%" alt="Sketch: a drone's survey path with capture points, one frame tagged with GPS EXIF fields" />
-</picture>
+## Tools I use
 
-**[align-capture](https://github.com/KuoFengYuan/align-capture)**<br />
-Grabs frames from a drone's RTSP stream and writes the matching MAVLink GPS fix into each image's EXIF, so they go straight into COLMAP. Read-only: it never sends commands to the aircraft.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-cesium-viewer-dark.svg" />
-  <img src="./assets/sketch-cesium-viewer-light.svg" width="100%" alt="Sketch: a globe with a pin and an inset of Gaussian splats" />
-</picture>
-
-**[3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer)**<br />
-A CesiumJS viewer for Gaussian Splatting as 3D Tiles. Converts your trained PLY in the app and lets you place it on the globe.
-
-</td>
-<td width="50%" valign="top">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-reconstudio-dark.svg" />
-  <img src="./assets/sketch-reconstudio-light.svg" width="100%" alt="Sketch: video frames, a sparse COLMAP point cloud with cameras, and a triangle mesh" />
-</picture>
-
-**[Recon Studio](https://github.com/KuoFengYuan/reconstudio)**<br />
-A local web panel for the desktop side: video to sharp frames, COLMAP, 3DGS training with GS-2M, then a mesh. One place to run and check each step.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/sketch-ragglass-dark.svg" />
-  <img src="./assets/sketch-ragglass-light.svg" width="100%" alt="Sketch: a PDF page with highlighted lines linked to a citation in an answer" />
-</picture>
-
-**[RAGGlass](https://github.com/KuoFengYuan/RAGGlass)**<br />
-Not 3D. A local workbench for debugging document RAG: the PDF, the retrieved evidence and the model's answer side by side, with every run kept.
-
-</td>
-</tr>
-</table>
-
-## Tools
-
-**3D & spatial:** Gaussian Splatting, COLMAP, ARKit, LiDAR, Metal, CesiumJS, 3D Tiles<br />
-**Languages & web:** Swift, Python, TypeScript, JavaScript, FastAPI, Vue<br />
-**Local AI:** Docling, Qdrant, Ollama
-
-<!-- Figures are generated by tools/build_assets.py -->
+Swift, Metal, ARKit, COLMAP, Gaussian Splatting, Python, TypeScript and CesiumJS.
