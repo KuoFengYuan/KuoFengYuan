@@ -13,6 +13,10 @@ Scan a space with an iPhone and train a 3D Gaussian Splatting model on the phone
 
 Scanning, on-device training, walking through the model and editing. An iPhone screen recording, sped up to 30 seconds.
 
+https://github.com/user-attachments/assets/3f8944d1-145c-4fc3-96c1-3cb5fdb734bf
+
+<sub>Demo footage: [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).</sub>
+
 ## The rest of the pipeline
 
 <table>
