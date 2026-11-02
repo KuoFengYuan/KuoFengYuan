@@ -10,7 +10,7 @@
 
 | 專案 | 用途 |
 | --- | --- |
-| [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything) | 第一代 iPhone App：掃描、手機端 3DGS 訓練，或匯出 COLMAP 資料集。 |
+| [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything) | iPhone 掃描、手機端 3DGS 訓練與 COLMAP 資料集匯出。 |
 | [align-capture](https://github.com/KuoFengYuan/align-capture) | 從無人機 RTSP 影像擷取照片，寫入對應的 MAVLink GPS 資料，供 COLMAP 使用。 |
 | [Recon Studio](https://github.com/KuoFengYuan/reconstudio) | 在本機網頁介面處理影片影格、執行 COLMAP 與訓練 3DGS。 |
 | [3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer) | 將 PLY 模型轉為 3D Tiles，放到 CesiumJS 地球上檢視。 |
@@ -20,7 +20,7 @@
 
 用 iPhone 掃描空間，直接在手機上訓練 3D Gaussian Splatting 模型。完成後可以走進模型、編輯，或匯出模型與 COLMAP 資料集。
 
-第一代原始碼在 [Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything)。
+[GitHub 專案：Splatify-Anything](https://github.com/KuoFengYuan/splatify-anything)。
 
 ### iPhone 實錄
 
