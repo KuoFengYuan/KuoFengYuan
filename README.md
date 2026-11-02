@@ -20,7 +20,7 @@ I'm Feng-Yuan Kuo, a developer based in Taiwan. I work on 3D vision and reconstr
 | [3D Tiles Splat Viewer](https://github.com/KuoFengYuan/cesium-gaussian-splat-viewer) | Convert PLY models to 3D Tiles and view them on a CesiumJS globe. |
 | [RAGGlass](https://github.com/KuoFengYuan/RAGGlass) | Inspect document retrieval, source passages and answers side by side. |
 
-## SplatCapture Studio
+## AnyReplica
 
 Scan a space with an iPhone and train a 3D Gaussian Splatting model on the phone. Walk through the result, edit it, or export a model or COLMAP dataset.
 
