@@ -7,17 +7,11 @@ I work on 3D reconstruction: capturing real places with phones and drones, turni
 
 ## SplatCapture Studio
 
-An iPhone app that scans a space and trains a 3D Gaussian Splatting model on the phone itself, no desktop GPU involved. It records ARKit camera poses (plus LiDAR depth on phones that have it), lets you clean up the frames before training, and runs the training in Swift and Metal with a live preview you can orbit. If you'd rather train on a desktop, it exports a COLMAP dataset instead.
+Scan a space with an iPhone and train a 3D Gaussian Splatting model on the phone. Walk through the result, edit it, or export a model or COLMAP dataset.
 
-**[Join the TestFlight beta](https://testflight.apple.com/join/hKhVdTUR)** · [Source](https://github.com/KuoFengYuan/arkit-3dgs-scanner)
+**[Join the TestFlight beta](https://testflight.apple.com/join/hKhVdTUR)** · [First-generation source](https://github.com/KuoFengYuan/splatify-anything)
 
-<p align="center">
-  <a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4"><img width="240" src="./assets/splatcapture-demo.webp" alt="Screen recording of SplatCapture Studio: scanning a desk, fusing the point cloud, then training and orbiting a 3D Gaussian Splatting model on the iPhone" /></a>
-  <br />
-  <sub>fig. 2&nbsp;&nbsp; a real run on the phone: desk scan, point-cloud fusion, training (<a href="https://github.com/KuoFengYuan/arkit-3dgs-scanner/blob/main/docs/media/demo.mp4">full 60 s video</a>)</sub>
-  <br />
-  <sub>241,171 Gaussians · PSNR 26.1 dB · 1 min 38 s of training, stopped early at 1,586 of 4,000 iterations</sub>
-</p>
+Scanning, on-device training, walking through the model and editing. An iPhone screen recording, sped up to 30 seconds.
 
 ## The rest of the pipeline
 
